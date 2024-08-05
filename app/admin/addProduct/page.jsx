@@ -12,7 +12,7 @@ const Page = () => {
     description: "",
     category: "Startup",
     author: "Alex Bennett",
-    authorImg: "/author_img.png",
+    authorImg: "./public/author_img.png",
   });
 
   const onChangeHandler = (event) => {
@@ -36,12 +36,12 @@ const Page = () => {
       toast.success(response.data.msg)
       setImage(false);
       setData({
-        title: "",
-        description: "",
-        category: "Startup",
-        author: "Alex Bennett",
-        authorImg: "/author_img.png",
-      });
+    title: "",
+    description: "",
+    category: "Startup",
+    author: "Alex Bennett",
+    authorImg: "./public/author_img.png",
+  })
     }
     else{
       toast.error("Error");
